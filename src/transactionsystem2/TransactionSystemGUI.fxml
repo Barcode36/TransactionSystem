@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="800" prefWidth="850" xmlns:fx="http://javafx.com/fxml/1" fx:controller="transactionsystem2.TransactionSystemGUIController">
+    <children>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="800.0" prefWidth="300.0">
+            <children>
+                 
+                  <TextArea fx:id = "Description" layoutX = "70" layoutY = "25" />
+                  <Button fx:id = "Add_Client" layoutY="220" layoutX = "190" text = "Add Client" onAction = "#Addclient"/> 
+                   <Button fx:id = "Add_transaction" layoutY="320" layoutX = "190" text = "Add Transactions"  onAction = "#addTransaction" /> 
+                   <Button fx:id = "Modify_Client" layoutY="220" layoutX = "30" text = "Modify Client" onAction = "#ModifyClient"/> 
+                   <Button fx:id = "Modify_transaction" layoutY="320" layoutX = "30" text = "Modify Transactions"  onAction = "#ModifyTransaction" />       
+                    <Button fx:id = "Delete_Client" layoutY="175" layoutX = "30" text = "Delete Client" onAction = "#DeleteClients"/> 
+                   <Button fx:id = "Delete_transaction" layoutY="175" layoutX = "160" text = "Delete Transactions"  onAction = "#DeleteTransactions" />   
+                    <Button fx:id = "Print_Client" layoutY="375" layoutX = "30" text = "Print Client Table" onAction = "#printclienttable"/> 
+                   <Button fx:id = "Print_transaction" layoutY="375" layoutX = "190" text = "Print Transactions Table"  onAction = "#printtransactiontable" />                                                       
+                   <Label fx:id = "Clients_table" layoutX = "150" layoutY = "580" text = "Clients Table"/>
+                    <Label fx:id = "BasicFunctionalties" layoutX = "90" layoutY = "100" text = "Basic Functionalties"/>
+                   <TextArea fx:id = "Result_Client" layoutY = "600"  prefWidth="300.0" layoutX = "50" />
+                
+            </children>
+        </AnchorPane>
+   <AnchorPane minHeight="0.0" minWidth="0.0" layoutX = "300.0" prefHeight="800.0" prefWidth="300.0">
+            <children>
+                <Pane prefHeight="523.0" prefWidth="700.0">
+                    <children>
+                      
+                  
+                   
+    
+                  <Button fx:id = "AddCVS" layoutX = "130" layoutY = "150" text = "Add Excel sheet to Database" onAction = "#loadCVS"/>
+                  <Button fx:id = "Total_earings_by_date" layoutY="220" layoutX = "50" text = "Get all clients profits" onAction = "#add_total"/> 
+                  <Button fx:id = "Total_client_spending" layoutY="220" layoutX = "250" text = "Get all clients spending"   onAction = "#totalclientspending" /> 
+                  <ComboBox fx:id="profits_by_client_name" layoutY="270.0" layoutX="90.0"  /> 
+                  <Button fx:id="client_selection1" layoutX="270" layoutY="320.0" text = "choose client" onAction = "#calculate_client_spending"/>                  
+                  <Button fx:id="client_selection2" layoutX="90" layoutY="320.0" text = "choose client" onAction = "#calculate_client_profits"/>                 
+                  <Button fx:id="Delete_transaction_table" layoutX="270" layoutY="370.0" text = "Delete Transaction Table" onAction = "#Delete_transaction_table"/>                  
+                  <Button fx:id="Delete_client_table" layoutX="90" layoutY="370.0" text = "Delete Client Table" onAction = "#Delete_client_table"/>                      
+                  <ComboBox fx:id="spending_by_client_name" layoutX="270" layoutY="270.0" />  
+                  <Label fx:id = "AdvancedFunctionalties" layoutX = "130" layoutY = "100" text = "Advanced Functionalties"/>  
+                  <Label fx:id = "trasactions_table" layoutX = "150" layoutY = "580" text = "Trasactions Table"/>                 
+                  <TextArea fx:id = "Results_trasactions" layoutY = "600"  prefWidth="400.0" layoutX = "75" />
+                    
+                    </children>
+                </Pane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
