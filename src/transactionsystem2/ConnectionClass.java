@@ -16,13 +16,13 @@ import java.sql.DriverManager;
 public class ConnectionClass {
     private com.mysql.jdbc.jdbc2.optional.MysqlDataSource dataSource = new com.mysql.jdbc.jdbc2.optional.MysqlDataSource();
     
-    private String username = "uzaqleuw_root";
-    private String password = "Spiderman420!";
+    private String username = "xxxxxx_xxxxx";
+    private String password = "xxxxxxxxxxxxxxxx";
     private Connection connection = null;
 
     public void setConnection() {
-        dataSource.setServerName("cloud19.hostgator.com");
-           dataSource.setDatabaseName("uzaqleuw_JunesDatabase");
+        dataSource.setServerName("xxxxxx.xxxxx.xxxx");
+           dataSource.setDatabaseName("xxxxxx_xxxxxx");
     }
 
     public boolean getConnection() {
