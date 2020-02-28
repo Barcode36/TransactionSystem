@@ -1,5 +1,5 @@
 # Compiled class file
-*.class
+*ConnectionClass.class
 
 # Log file
 *.log
