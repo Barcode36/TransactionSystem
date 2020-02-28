@@ -28,7 +28,7 @@ public class ConnectionClass {
     public boolean getConnection() {
         setConnection();
         try {
-            connection = dataSource.getConnection("uzaqleuw_june","3Hotdogs!");
+            connection = dataSource.getConnection(username,password);
 
             System.out.println("Connection Made");
 
